@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home- BBC Sports</title>
+		<style>
+			body
+			{
+				margin: 0;
+				padding: 0;
+			}
+			
+			#top-bar
+			{
+				width: 1000px;
+				height: 40px;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#BBC-logo
+			{
+				margin-top: 8px;
+				width: 120px;
+				padding-right: 0;
+				border-right-color: #CCCCCC;
+				border-right-style: solid;
+				border-width: 1px;
+				float: left;
+			}
+			
+			#logo-img
+			{
+				margin-
+			}
+		</style>
+	</head>
+		<body>
+			<div id = "top-bar">
+				<div id = "BBC-logo"><a href = ""><img src = "C:\Users\Prakarsh Parashar\Desktop\BBC Website\images\bbc-blocks-dark.png" alt = "BBC logo in dark blocks" id = "logo-img"></a> </div>
+			</div>
+		</body>
+</html>

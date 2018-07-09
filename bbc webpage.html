@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home- BBC Tech</title>
+		<style>
+			body
+			{
+				margin: 0;
+				padding: 0;
+				font-family: Arial;
+			}
+			
+			#top-bar
+			{
+				width: 1000px;
+				height: 30px;	
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#BBC-logo
+			{
+				padding-top: 9px;
+				width: 90px;
+				padding-right: 5px;
+				float: left;
+				padding-bottom: 2px;
+			}
+			
+			.border-top-bar
+			{
+				border-right-color: #CCCCCC;
+				border-right-style: solid;
+				border-width: 1px;
+				height: 26px;
+				color: black;
+				font-weight: bold;
+				font-family: Arial;
+				text-decoration: solid;
+				font-size: 13px;
+				padding-top: 12px;
+				padding-bottom: 0px;
+				float: left;
+			}
+				
+			#logo-img
+			{
+				float: right;
+			}
+			
+			#sign-in
+			{
+				width: 100px;
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+			
+			#news
+			{
+				width: 37px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#blank
+			{
+				width: 37px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#sports
+			{
+				width: 45px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#iPlayer
+			{
+				width: 48px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#tv
+			{
+				width: 35px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#radio
+			{
+				width: 37px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#more
+			{
+				width: 55px;
+				padding-left: 10px;
+				padding-right: 35px;
+			}
+			
+			#Weather
+			{
+				width: 45px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			#search-bar
+			{
+				padding-top: 8px;
+				padding-left: 5px;
+				width: 195px;
+				border-right: none;
+			}
+			
+			#Search-bar
+			{
+				background-color: #E4E4E4;
+				border: none;
+				width: 80%;
+				height: 20px;
+				color: #595959;
+				float:left;
+				font-weight: bold;
+				font-size: 14px;
+				font-family: Arial;
+				text-decoration: bold;
+			}
+			
+			#magnifying-glass
+			{
+				width: 20%;
+				float: left;
+				border: none;
+				height: 20px;
+			}
+			
+			#sign-in:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #1188BB;
+			}
+			
+			#blank:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #262626;
+			}
+			
+			#news:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #FFEE11;
+			}
+			
+			#iPlayer:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #88CCEE;
+			}
+			
+			#sports:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #ED3D7D;
+			}
+			
+			#tv:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #262626;
+			}
+			
+			#Weather:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #262626;
+			}
+			
+			#more:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #262626;
+			}
+			
+			#radio:hover
+			{
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+				border-bottom-color: #262626;
+			}
+			
+			#red-bar
+			{
+				clear: both;
+				width: 100%;
+				background-color: #BB1919;
+				height: 63px;
+			}
+			
+			#dark-red-bar
+			{
+				margin-top: 0;
+				margin-bottom: 0;
+				clear: both;
+				width: 100%;
+				background-color: #A91717;
+				font-size: 16px;
+				height: 30px;
+			}
+
+			#local-news
+			{
+				width: 165px;
+				height: 28px;
+				float: right;
+				border: solid;
+				border-color: #BB4545;
+				border-width: 1px;
+				margin-right: 200px;
+				margin-top: 12px;
+				margin-bottom: 10px;
+				padding: 5px;
+				color: white;
+				font-size: 19px;
+			}
+			
+			a#local-news-link
+			{
+				color: white;
+				text-decoration: none;
+			}
+			
+			a#dark-red-link
+			{
+				color: white;
+				text-decoration: none;
+			}
+			
+			.dark-red-divs:hover
+			{
+				border-style: solid;
+				border-bottom-width: 5px;
+				border-color: white;
+				border-top-width: 0;
+				border-right-width: 0;
+				border-left-width: 0;
+			}
+			
+			#dark-red-khaali
+			{
+				float: left;
+				margin: 0;
+				width: 180px;
+				height: 100%;
+			}
+			
+			.dark-red-divs
+			{
+				float: left;
+				border-right-color: #BB4545;
+				color: white;
+				font-size: 14px;
+				border-right-width: 1px;
+				margin-top: 5px;
+				border-right-style: solid;
+				height: 20px;
+				padding-left: 10px;
+			}
+			
+			#home
+			{
+				width: 53px;
+			}
+			
+			#UK
+			{
+				width: 49px;
+			}
+			
+			#world
+			{
+				width: 55px;
+			}
+			
+			#business
+			{
+				width: 72px;
+			}
+			
+			#politics
+			{
+				width: 64px;
+			}
+			
+			#tech
+			{
+				width: 53px;
+			}
+			
+			#science
+			{
+				width: 64px;
+			}
+			
+			#health
+			{
+				width: 61px;
+			}
+			
+			#Education
+			{
+				width: 79px;
+			}
+			
+			#entertainment
+			{
+				width: 99px;
+			}
+			
+			#videoandaudio
+			{
+				width: 129px;
+			}
+			
+			#more-more
+			{
+				width: 55px;
+				border-right: none;
+			}
+			
+			#button-more
+			{
+				color: white;
+				background-color: #A91717;
+				border: none;
+				padding-top: 5px;
+			}
+			
+			#button-more:hover
+			{
+				background-color: black;
+			}
+			
+			#underline-main-head
+			{
+				border-bottom: 3px solid #BB1919;
+			}
+			
+			#Asada-bug-main
+			{
+				width: 665px;
+				margin-left: 180px;
+				margin-top: 60px;
+				height: 300px;
+				border-right-style: solid;
+				border-color: #DCDCDC;
+				line-height: 1.25;
+				border-right-width: 1px;
+			}
+			
+			#asada-bug-para
+			{
+				line-height: 1.38;
+				float: left;
+				width: 250px;
+				margin-top: -19px;
+				font-size: 13.5px;
+				color: #8A8A8A;
+				height: 100%;
+			}
+			
+			#asada-img
+			{
+				float: left;
+				width: 400px;
+				height: 230px;
+			}	
+			
+			#time
+			{
+				float: left;
+				font-size: 95%;
+				padding-left: 15px;
+				width: 75px;
+				height: 15px;
+				margin-bottom: px;
+				border-right: solid 1px #DCDCDC;
+				color: #737373;
+			}
+			
+			#technology-sub
+			{
+				float: left;
+				font-size: 95%;
+				margin-left: 8lpx;
+				width: 75px;
+				height: 15px;
+				color: #BB1919;
+			}
+			
+			#two-links-asda
+			{
+				clear: both;
+				width: 210px;
+				height: 45px;
+				color: black;
+				padding-top: 8px;
+			}
+			
+			#eBay-link
+			{
+				line-height: 3;
+			}
+			
+			#border-block
+			{
+				position: relative;
+				bottom: 15px;
+				right: 15px;
+				width: 41px;
+				height: 25px;
+				border-bottom: solid 1px #BB1919;
+				margin: 0;
+			}
+			
+			#side-videos
+			{
+				position: absolute;
+				top: 180px;
+				left: 860px;
+				width: 300px;
+				height: 800px;
+			}
+			
+			#watch-listen
+			{
+				margin-left: 0px;
+				font-family: Arial;
+				font-weight: 400;
+				color: #404040;
+				font-size: 125%;
+			}
+		</style>
+	</head>
+		<body>
+			<div id = "top-bar">
+				<div id = "BBC-logo" class = "border-top-bar">
+					<a href = ""><img src = "C:\Users\Prakarsh Parashar\Desktop\BBC Website\images\bbc-blocks-dark.png" alt = "BBC logo in dark blocks" id = "logo-img"></a>
+				</div>
+				
+				<a href = "">
+					<div id = "sign-in" class = "border-top-bar">
+						Sign in
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "blank" class = "border-top-bar">
+						
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "news" class = "border-top-bar">
+						News
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "sports" class = "border-top-bar">
+						Sports
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "Weather" class = "border-top-bar">
+						Weather
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "iPlayer" class = "border-top-bar">
+						iPlayer
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "tv" class = "border-top-bar">
+						TV
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "radio" class = "border-top-bar">
+						Radio
+					</div>
+				</a>
+				
+				<a href = "">
+					<div id = "more" class = "border-top-bar">
+						More
+					</div>
+				</a>
+				
+				<div id = "search-bar" class = "border-top-bar">
+					<input type = "text" placeholder = "Search" id = "Search-bar" ]>
+					<a href = "" id = "magnifying-glass"><img src = "C:\Users\Prakarsh Parashar\Desktop\BBC Website\images\magnifying-glass.png"></a>
+				</div>				
+			</div>
+			
+			<div id = "red-bar">
+				<div id = "local-news">
+					<a href = "" id = "local-news-link">Find Local News</a>
+				</div>
+			</div>
+			
+			<div id = "dark-red-bar" >
+				<div id = "dark-red-khaali">
+				</div>
+				<a href = "" class = "dark-red-link">
+					<div id = "home" class = "dark-red-divs">
+						Home
+					</div>
+				</a>
+		
+				<a href = "" class = "dark-red-link">
+					<div id = "UK" class = "dark-red-divs">
+						UK
+					</div>
+				</a>
+				
+				<a href = "" class = "dark-red-link">
+					<div id = "world" class = "dark-red-divs">
+						World
+					</div>
+				</a>
+				
+				<a href = "" class = "dark-red-link">
+					<div id = "business" class = "dark-red-divs">
+						Business
+					</div>
+				</a>
+				
+				<a href = "" class = "dark-red-link">
+					<div id = "politics" class = "dark-red-divs">
+						Politics
+					</div>
+				</a>
+				
+				<a href = "" c>
+					<div id = "tech" class = "dark-red-divs" class = "dark-red-link">
+						Tech
+					</div>
+				</a>
+				
+				<a href = "" >
+					<div id = "science" class = "dark-red-divs" class = "dark-red-link">
+						Science
+					</div>
+				</a>
+				
+				<a href = "" >
+					<div id = "health" class = "dark-red-divs" class = "dark-red-link">
+						Health
+					</div>
+				</a>
+				
+				<a href = "" >
+					<div id = "Education" class = "dark-red-divs" class = "dark-red-link">
+						Education
+					</div>
+				</a>
+				
+				<a href = "" >
+					<div id = "entertainment" class = "dark-red-divs" class = "dark-red-link">
+						Entertainment
+					</div>
+				</a>
+				
+				<a href = "" >
+					<div id = "videoandaudio" class = "dark-red-divs" class = "dark-red-link">
+						Video and Audio
+					</div>
+				</a>
+				
+				<a href = "" >
+					<button id = "button-more" height = 30px >More</button>
+				</a>
+				
+				<h3 id = "main-head">
+					<span id = "underline-main-head">Technology</span>
+				</h3>
+			</div>
+			
+			<div id = "Asada-bug-main">
+				<h1>Asda bug exposed payment details</h1>
+				<div id = "asada-bug-para">
+					<p>Security Vulnerabilities that put <br>customers at risk have affected <br>Asada's website for a couple of years,<br> a security expert has revealed.</p>
+					<div id = "time">2 hours ago
+					<div id = "border-block">
+						
+					</div>
+					</div>
+	                <div id = "technology-sub">Technology</div>
+					<div id = "two-links-asda">
+						<p>Surveillence firm hit in hack attack<br>
+						   <span id = "eBay-link">eBay flaw has existed for months</span></p>
+					</div>
+				</div>
+				
+				<div id = "asada-img">
+					<a><img src = "C:\Users\Prakarsh Parashar\Desktop\BBC Website\images\asada-img.gif" width = 400 height = 230></a>
+				</div>
+			</div>
+			
+			<div id = "side-videos">
+				<h3><span id = "watch-listen">Watch/Listen</span></h3>
+				<iframe width="230" height="150" src="https://www.youtube.com/embed/oBuVZJ0Fr9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+				</iframe>
+				
+			</div>
+		</body>
+</html>
